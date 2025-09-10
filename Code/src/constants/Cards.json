@@ -1,0 +1,7 @@
+[
+  { "id": "movie",   "title": "Movie   15min",   "price": 62.5, "image": "../../public/pictures/movie-card.jpg" },
+  { "id": "game",    "title": "Game    15min",    "price": 70,   "image": "../../public/pictures/game-card.jpg" },
+  { "id": "youtube", "title": "YouTube 15min", "price": 70,   "image": "../../public/pictures/youtube-card.jpg" },
+  { "id": "outside", "title": "Outside 15min", "price": 60,   "image": "../../public/pictures/outside-card.jpg" },
+  { "id": "phone",   "title": "Phone   15min",   "price": 85,   "image": "../../public/pictures/phone-card.jpg" }
+]

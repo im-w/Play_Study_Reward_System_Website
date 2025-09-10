@@ -1,0 +1,90 @@
+.morning-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 16px;
+}
+
+.morning-modal {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.modal-description {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.modal-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  min-height: 70px;
+  resize: vertical;
+  font-size: 0.95rem;
+}
+
+.modal-textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  background: rgba(255,255,255,0.07);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.modal-btn.cancel {
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+
+.modal-btn.save {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+
+.modal-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .morning-modal {
+    padding: 16px;
+  }
+}

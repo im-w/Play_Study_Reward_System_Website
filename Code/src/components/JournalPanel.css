@@ -1,0 +1,65 @@
+.journal-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: calc(var(--radius) - 4px);
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: var(--shadow);
+}
+
+.panel-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.panel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), transform var(--transition);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.panel-btn.morning {
+  background: linear-gradient(135deg, #ffdd55, #ff9900);
+  color: #000;
+}
+
+.panel-btn.night {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: #fff;
+}
+
+.panel-btn.reset {
+  background: linear-gradient(135deg, #ff5555, #aa0000);
+  color: #fff;
+}
+
+.panel-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .panel-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

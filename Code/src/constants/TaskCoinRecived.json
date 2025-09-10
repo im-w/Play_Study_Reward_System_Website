@@ -1,0 +1,5 @@
+{
+  "body": { "easy": 80, "medium": 100, "hard": 120 },
+  "mind": { "easy": 80, "medium": 100, "hard": 120 },
+  "work": { "easy": 80, "medium": 100, "hard": 120 }
+}

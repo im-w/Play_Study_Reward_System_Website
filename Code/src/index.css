@@ -1,0 +1,199 @@
+/* ===================================================================
+   App.css — Modern Glassmorphism Dashboard (Naim-like)
+   Vite friendly · clean · minimal
+   =================================================================== */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #0b0f15;
+  --surface: rgba(255,255,255,0.04);
+  --glass-bg: rgba(255,255,255,0.08);
+  --glass-blur: 20px;
+  --muted: #94a3b8;
+  --text: #f1f5f9;
+  --accent: #00e0ff;
+  --accent-2: #ff4de1;
+  --radius: 16px;
+  --shadow: 0 8px 30px rgba(0,0,0,0.35);
+  --container-w: 1100px;
+  --transition: 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('../public/pictures/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+.app-hero {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3), transparent 25%);
+  z-index: -1;
+}
+
+.app-root {
+  display: flex;
+  gap: 24px;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.left-col {
+  width: 40%;
+  min-width: 300px;
+  max-width: 480px;
+  height: 100vh;
+  position: sticky;
+  top: 24px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.profile-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.panel-header {
+  margin-bottom: 8px;
+}
+.panel-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.panel-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+
+.right-col {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-scroll {
+  height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.app-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-card {
+  background: var(--surface);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 12px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.section-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.4);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgba(255,255,255,0.08);
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+.section-title {
+  font-weight: 700;
+}
+.section-actions {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.right-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.right-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(0,224,255,0.25), rgba(255,77,225,0.25));
+  border-radius: 8px;
+}
+
+@media (max-width: 1100px) {
+  .app-root {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .left-col,
+  .right-col {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .right-scroll {
+    height: auto;
+  }
+}
+

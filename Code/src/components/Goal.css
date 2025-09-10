@@ -1,0 +1,57 @@
+
+.goal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goal-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.goal-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.goal-input {
+  flex: 1 1 140px;
+  min-width: 120px;
+  max-width: 200px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  color: var(--text);
+  outline: none;
+  transition: border var(--transition), background var(--transition);
+}
+
+.goal-input:focus {
+  border-color: var(--accent);
+  background: rgba(255,255,255,0.1);
+}
+
+.goal-loading {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .goal-input {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
