@@ -9,7 +9,33 @@
 
 ![App Screenshot 2](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Screenshot%202.png?raw=true)
 
-![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording%201.gif)
+### Profile
+
+you can change your name
+
+![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-profile.gif)
+
+### Goal
+
+you can write your goals
+
+![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-goal.gif)
+
+### Pomodoro
+
+![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-pomodoro.gif)
+
+### Chart
+
+![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-chart.gif)
+
+### Reward System
+
+![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-rewardSystem.gif)
+
+### Journal
+
+![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-journal.gif)
 
 
 ## Installation
