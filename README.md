@@ -11,13 +11,9 @@
 
 ### Profile
 
-you can change your name
-
 ![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-profile.gif)
 
 ### Goal
-
-you can write your goals
 
 ![App ScreenRec 1](https://github.com/im-w/Play_Study_Reward_System_Website/blob/main/Documents/Recording-goal.gif)
 
